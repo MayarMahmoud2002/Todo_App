@@ -1,5 +1,4 @@
 
-import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +6,8 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:todo_app/shared/styles/colors.dart';
 import 'package:todo_app/shared/styles/theme.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class bottomSheet extends StatefulWidget {
   static const String routeName = 'bottomsheet';
@@ -27,7 +28,7 @@ class _bottomSheetState extends State<bottomSheet> {
         child: Column(
           children: [
             Text(
-                'Add New Task',
+            AppLocalizations.of(context)!.addtask,
               style: Theme.of(context).textTheme.subtitle1!.copyWith(
                 color: BlueColor,
                 fontSize: 20.0,
@@ -46,7 +47,7 @@ class _bottomSheetState extends State<bottomSheet> {
                         borderRadius: BorderRadius.all(Radius.circular(20.0)),
                         borderSide: BorderSide(color: MintGreenColor),
                       ),
-                      hintText: 'enter title of task',
+                      hintText: AppLocalizations.of(context)!.titletask,
                       hintStyle: TextStyle(
                         color: Colors.black26,
                         fontWeight: FontWeight.bold,
@@ -70,7 +71,7 @@ class _bottomSheetState extends State<bottomSheet> {
                       borderRadius: BorderRadius.all(Radius.circular(20.0)),
                       borderSide: BorderSide(color: MintGreenColor),
                     ),
-                    hintText: 'enter description of task',
+                    hintText: AppLocalizations.of(context)!.descriptiontask,
                     hintStyle: TextStyle(
                       color: Colors.black26,
                       fontWeight: FontWeight.bold,
@@ -85,7 +86,7 @@ class _bottomSheetState extends State<bottomSheet> {
               height: 20.0,
             ),
             Text(
-              'Select Time',
+                AppLocalizations.of(context)!.selecttime,
               style: Theme.of(context).textTheme.subtitle1!.copyWith(
                 color: BlueColor,
                 fontSize: 20.0,

@@ -5,7 +5,7 @@ import 'package:todo_app/shared/styles/colors.dart';
 
 class MyThemeData
 {
-  ThemeData lightMode = ThemeData(
+  static ThemeData lightMode = ThemeData(
     primaryColor: BlueColor,
     scaffoldBackgroundColor: MintGreenColor,
     colorScheme: ColorScheme(
@@ -57,18 +57,18 @@ class MyThemeData
     ),
 
   );
-  ThemeData darkMode = ThemeData(
+  static ThemeData darkMode = ThemeData(
     primaryColor: BlueColor,
-    scaffoldBackgroundColor: MintGreenColor,
+    scaffoldBackgroundColor: DarkColor,
     colorScheme: ColorScheme(
-      primary: BlueColor,
+      primary: DarkColor,
       primaryVariant: BlueColor,
       secondary: WhiteColor,
       secondaryVariant: WhiteColor,
       surface: BlackColor,
       background: DarkColor,
       error: RedColor,
-      onPrimary: WhiteColor,
+      onPrimary: DarkColor,
       onSecondary: WhiteColor,
       onSurface: BlackColor,
       onBackground: WhiteColor,
@@ -89,7 +89,7 @@ class MyThemeData
       subtitle1: TextStyle(
         fontSize: 25.0,
         fontWeight: FontWeight.bold,
-        color: BlueColor,
+        color: BlackColor,
 
       ),
       subtitle2: TextStyle(

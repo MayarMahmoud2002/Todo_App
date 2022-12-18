@@ -1,0 +1,14 @@
+{
+    "language" : "Language",
+    "english" : " English",
+    "arabic" : "Arabic",
+    "mode" : "Mode",
+    "light" : "Light",
+    "dark" : "Dark",
+    "addtask" :"Add New Task",
+    "titletask" :"enter title of task",
+    "descriptiontask" : "enter description of task",
+    "selecttime" : "Select Time",
+            "todolist" : "To Do List"
+
+}
